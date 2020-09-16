@@ -1,0 +1,8 @@
+1. put credentials in the "config.py" file (username and password)
+2. change the path of chrome driver in "config.py"
+3. put path to htmls in absolute htlms feild in "config.py"
+4. 'screen_names.csv' is the file name for the csv containing names to be searched. Rename the file as"screen_names.csv" which contains the names to be searched
+5. Run "linkedIn_module.py"
+6. After all the htmls are downloaded run "parsing_module.py".
+7. Run "twitter_address_module.py"
+8. All the final scraped data will be in 'Final_Data.csv'

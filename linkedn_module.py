@@ -48,6 +48,7 @@ def main():
     driver.find_element_by_class_name('login__form_action_container ').click()
 
     driver.get(linked_in_search_people)
+#     getting names from the csv given with names
 
 
     listed=[]
@@ -80,7 +81,7 @@ def main():
                 By.XPATH,
                 "//input[@class='search-global-typeahead__input always-show-placeholder']"
             )
-
+# entering the names in search feild one by one
             search_field.clear()
             search_field.send_keys(query)
             search_field.send_keys(Keys.ENTER)

@@ -64,7 +64,7 @@ if __name__=="__main__":
         time.sleep(5)
         driver.execute_script("window.scrollTo(0, 2500)") 
         time.sleep(2)
-       
+#       scraping exerience 
         try:
             experience_element = driver.find_elements_by_xpath("//a[@data-control-name='background_details_company']")
             if experience_element:
@@ -108,7 +108,7 @@ if __name__=="__main__":
         info = driver.find_element_by_xpath("//a[@data-control-name='contact_see_more']")
         info.click()
         time.sleep(2)
-
+# scraping twitter handle
         try:
             twitter = driver.find_element_by_xpath("//section[@class='pv-contact-info__contact-type ci-twitter']//a")
 
@@ -118,7 +118,7 @@ if __name__=="__main__":
         except:
             twit = 'N/A'
 
-
+# scrapping address
 
         try:
             address = driver.find_element_by_xpath("//section[@class='pv-contact-info__contact-type ci-address']//a")

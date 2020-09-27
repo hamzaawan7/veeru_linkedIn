@@ -3,7 +3,7 @@ import config
 import glob
 import pandas as pd
 
-
+#parsing downloaded htmls one by one
 def parse_html_files():
     total_people = 0
     non_linkedin_members = 0
@@ -25,7 +25,7 @@ def parse_html_files():
     print("#################### ")
 
 
-
+# removing redundant results if any
 def remove_redundant():
     all_data = pd.read_csv('data.csv')
     helper_functions.append_data('unique_instances_data.csv', "Name", "Location", "Employer at", "Position",
